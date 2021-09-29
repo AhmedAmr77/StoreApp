@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionOnProductViewController" customModule="StoreApp" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="5aR-EE-ELA" id="fkc-0Z-Eqf"/>
+                <outlet property="descriptionLabel" destination="rKp-wf-K2l" id="wOr-tk-ed1"/>
+                <outlet property="editProductButtonOutlet" destination="6nq-6y-55m" id="A3u-UF-BkK"/>
+                <outlet property="imageView" destination="aLD-b5-EzM" id="hUw-R7-0K7"/>
+                <outlet property="nameLabel" destination="pgA-7U-oPd" id="mGE-ID-Kwi"/>
+                <outlet property="priceLabel" destination="1f7-H7-sK6" id="SWA-Pl-hxe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jo-NV-80Y">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="llh-gg-Ngc" appends="YES" id="YUv-8U-gfI"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aR-EE-ELA">
+                    <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="9bq-tW-Lbk">
+                            <rect key="frame" x="32" y="16" width="366" height="248.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6g-sj-jGG">
+                                    <rect key="frame" x="0.0" y="0.0" width="366" height="161.5"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nike-Dunk-Low-Free.99-DH0952-100-4" translatesAutoresizingMaskIntoConstraints="NO" id="aLD-b5-EzM">
+                                            <rect key="frame" x="0.0" y="0.0" width="183" height="161.5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="aLD-b5-EzM" firstAttribute="top" secondItem="v6g-sj-jGG" secondAttribute="top" id="2i4-ed-zaU"/>
+                                        <constraint firstItem="aLD-b5-EzM" firstAttribute="leading" secondItem="v6g-sj-jGG" secondAttribute="leading" id="8hA-6F-G9c"/>
+                                        <constraint firstItem="aLD-b5-EzM" firstAttribute="width" secondItem="v6g-sj-jGG" secondAttribute="width" multiplier="0.5" id="idL-sN-Pef"/>
+                                        <constraint firstAttribute="bottom" secondItem="aLD-b5-EzM" secondAttribute="bottom" id="qqy-UK-JmA"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cax-nS-wlo">
+                                    <rect key="frame" x="0.0" y="164.5" width="366" height="25"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nike KD13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgA-7U-oPd">
+                                            <rect key="frame" x="0.0" y="0.0" width="266.5" height="25"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" red="0.24313725489999999" green="0.2470588235" blue="0.40784313729999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="S8e-Dg-EZc">
+                                            <rect key="frame" x="274.5" y="0.0" width="91.5" height="25"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LS-hq-el3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="33.5" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <color key="textColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f7-H7-sK6">
+                                                    <rect key="frame" x="36.5" y="0.0" width="55" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1f7-H7-sK6" firstAttribute="width" secondItem="S8e-Dg-EZc" secondAttribute="width" multiplier="0.6" id="9yt-IS-2le"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="S8e-Dg-EZc" firstAttribute="width" secondItem="cax-nS-wlo" secondAttribute="width" multiplier="0.25" id="tme-xd-UdY"/>
+                                    </constraints>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOC-nF-znZ">
+                                    <rect key="frame" x="0.0" y="192.5" width="366" height="56"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet consectetur" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rKp-wf-K2l">
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="rKp-wf-K2l" secondAttribute="trailing" id="61e-cH-bD5"/>
+                                        <constraint firstItem="rKp-wf-K2l" firstAttribute="leading" secondItem="zOC-nF-znZ" secondAttribute="leading" id="RTF-cG-Ici"/>
+                                        <constraint firstItem="rKp-wf-K2l" firstAttribute="top" secondItem="zOC-nF-znZ" secondAttribute="top" id="YqC-ON-uz6"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="v6g-sj-jGG" firstAttribute="height" secondItem="9bq-tW-Lbk" secondAttribute="height" multiplier="0.65" id="8rY-pe-tLK"/>
+                                <constraint firstItem="cax-nS-wlo" firstAttribute="height" secondItem="9bq-tW-Lbk" secondAttribute="height" multiplier="0.1" id="kbu-Lp-6IL"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evC-hz-oI4">
+                            <rect key="frame" x="16" y="272.5" width="382" height="54"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAm-XD-s0J">
+                                    <rect key="frame" x="0.0" y="0.0" width="153" height="54"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <state key="normal" title="Delete">
+                                        <color key="titleColor" red="1" green="0.28235294117647058" blue="0.28235294117647058" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="deleteButtonPressed:" destination="-1" eventType="touchUpInside" id="Qt7-XY-gEB"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nq-6y-55m">
+                                    <rect key="frame" x="153" y="0.0" width="229" height="54"/>
+                                    <color key="backgroundColor" red="0.19215686274509802" green="0.27058823529411763" blue="0.76470588235294112" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <state key="normal" title="Edit Product">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="editButtonPressed:" destination="-1" eventType="touchUpInside" id="tdC-BE-Ql7"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="6nq-6y-55m" firstAttribute="width" secondItem="evC-hz-oI4" secondAttribute="width" multiplier="0.6" id="epJ-hc-3jR"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="evC-hz-oI4" firstAttribute="height" secondItem="5aR-EE-ELA" secondAttribute="height" multiplier="0.15" id="8tP-1N-rOD"/>
+                        <constraint firstItem="9bq-tW-Lbk" firstAttribute="top" secondItem="5aR-EE-ELA" secondAttribute="top" constant="16" id="GRD-Sq-MSP"/>
+                        <constraint firstItem="evC-hz-oI4" firstAttribute="leading" secondItem="5aR-EE-ELA" secondAttribute="leading" constant="16" id="HVw-ya-RBh"/>
+                        <constraint firstAttribute="trailing" secondItem="evC-hz-oI4" secondAttribute="trailing" constant="16" id="MRj-96-PlW"/>
+                        <constraint firstItem="evC-hz-oI4" firstAttribute="top" secondItem="9bq-tW-Lbk" secondAttribute="bottom" constant="8" id="TwG-9x-cAV"/>
+                        <constraint firstAttribute="bottom" secondItem="evC-hz-oI4" secondAttribute="bottom" constant="32" id="U1e-01-reo"/>
+                        <constraint firstAttribute="trailing" secondItem="9bq-tW-Lbk" secondAttribute="trailing" constant="16" id="kcZ-Y8-APa"/>
+                        <constraint firstItem="9bq-tW-Lbk" firstAttribute="leading" secondItem="5aR-EE-ELA" secondAttribute="leading" constant="32" id="ue4-fY-yl3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="5aR-EE-ELA" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="8F3-83-FgU"/>
+                <constraint firstItem="6jo-NV-80Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LRh-fX-H18"/>
+                <constraint firstItem="6jo-NV-80Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SoC-0J-wnL"/>
+                <constraint firstAttribute="bottom" secondItem="5aR-EE-ELA" secondAttribute="bottom" id="eux-xa-v0g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5aR-EE-ELA" secondAttribute="trailing" id="kB5-VR-r41"/>
+                <constraint firstAttribute="bottom" secondItem="6jo-NV-80Y" secondAttribute="bottom" id="qr0-ee-gfH"/>
+                <constraint firstItem="5aR-EE-ELA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sdj-IS-M1d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6jo-NV-80Y" secondAttribute="trailing" id="tsz-Pz-Ng7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+        </view>
+        <tapGestureRecognizer id="llh-gg-Ngc">
+            <connections>
+                <action selector="dismissGesture:" destination="-1" id="YSq-v1-p1s"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Nike-Dunk-Low-Free.99-DH0952-100-4" width="153.5" height="115"/>
+    </resources>
+</document>
